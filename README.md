@@ -2,7 +2,7 @@
 
 ## Setup
 
-* Fill **config.json** file with urls endpoints that are gonna be monitored (Ex: ~~http://~~ myurl.com).
+* Fill **config.json** file with urls endpoints that gonna be monitored (Ex: ~~http://~~ myurl.com).
 * Configure interval value between the same requests **in seconds**.
 
 ## Run
