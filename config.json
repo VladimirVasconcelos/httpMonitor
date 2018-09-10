@@ -1,0 +1,21 @@
+{
+    "urls": [
+      "google.com",
+      "golang.org",
+      "godoc.org"
+    ],
+    "interval":30,
+    "peopleInCharge": [{
+      "user": "Baco",
+      "phones": [
+        "+5500999999999"
+      ]
+    },
+      {
+        "user": "Margot",
+        "phones": [
+          "+5500999999999"
+        ]
+      }
+    ]
+  }
