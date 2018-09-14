@@ -38,19 +38,19 @@ func main() {
 	cUrls := config.Urls
 	for _, urlVal := range cUrls {
 		in := info{urlVal, *new(string), config.Interval}
-		go checkUrlLife(uChan, in)
+		go checkURLLife(uChan, in)
 	}
 
 	for {
 		go func(c info) {
 			time.Sleep(time.Second * config.Interval)
-			checkUrlLife(uChan, c)
+			checkURLLife(uChan, c)
 		}(<-uChan)
 	}
 
 }
 
-func checkUrlLife(ch chan info, config info) {
+func checkURLLife(ch chan info, config info) {
 	r, err := http.Get("http://" + config.url)
 
 	config.status = r.Status
